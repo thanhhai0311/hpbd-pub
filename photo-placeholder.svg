@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe3f0"/>
+      <stop offset="100%" stop-color="#ffb6da"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b3a29"/>
+      <stop offset="100%" stop-color="#3d2416"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="300" height="400" fill="url(#bg)"/>
+
+  <!-- shoulders / body -->
+  <path d="M 60 400 Q 60 300 150 290 Q 240 300 240 400 Z" fill="#7fd6c8"/>
+  <path d="M 60 400 Q 60 320 100 300 L 100 400 Z" fill="#69c2b4"/>
+  <path d="M 240 400 Q 240 320 200 300 L 200 400 Z" fill="#69c2b4"/>
+
+  <!-- neck -->
+  <rect x="132" y="245" width="36" height="50" rx="14" fill="#f3c9a6"/>
+
+  <!-- head -->
+  <ellipse cx="150" cy="180" rx="72" ry="82" fill="#f6d5b3"/>
+
+  <!-- ears -->
+  <ellipse cx="76" cy="185" rx="12" ry="16" fill="#f3c9a6"/>
+  <ellipse cx="224" cy="185" rx="12" ry="16" fill="#f3c9a6"/>
+
+  <!-- hair -->
+  <path d="M 78 165
+           Q 70 70 150 62
+           Q 230 70 222 165
+           Q 222 120 150 118
+           Q 78 120 78 165 Z" fill="url(#hair)"/>
+  <path d="M 78 165 Q 74 210 88 238 Q 80 190 92 160 Z" fill="url(#hair)"/>
+  <path d="M 222 165 Q 226 210 212 238 Q 220 190 208 160 Z" fill="url(#hair)"/>
+
+  <!-- eyes -->
+  <ellipse cx="122" cy="182" rx="7" ry="9" fill="#3d2b22"/>
+  <ellipse cx="178" cy="182" rx="7" ry="9" fill="#3d2b22"/>
+
+  <!-- eyebrows -->
+  <path d="M 108 162 Q 122 154 136 162" stroke="#3d2b22" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 164 162 Q 178 154 192 162" stroke="#3d2b22" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- nose -->
+  <path d="M 150 188 Q 146 206 150 212 Q 154 214 158 210" stroke="#d99f78" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- smile -->
+  <path d="M 122 224 Q 150 246 178 224" stroke="#a85a4a" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- cheeks -->
+  <ellipse cx="104" cy="206" rx="11" ry="7" fill="#ffb6b6" opacity="0.55"/>
+  <ellipse cx="196" cy="206" rx="11" ry="7" fill="#ffb6b6" opacity="0.55"/>
+</svg>

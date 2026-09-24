@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chúc Mừng Sinh Nhật 🎂</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stars" id="stars"></div>
+
+  <main class="scene">
+    <h1 class="title">🎂 Chúc Mừng Sinh Nhật 🎂</h1>
+    <p class="subtitle" id="subtitle">Dùng bật lửa để thắp sáng từng cây nến nhé!</p>
+
+    <div class="cake-area">
+      <div class="cake-shadow"></div>
+      <div class="cake" id="cake">
+        <div class="tier tier-bottom">
+          <div class="lid"></div>
+          <div class="pearls"></div>
+        </div>
+        <div class="tier tier-mid">
+          <div class="lid"></div>
+          <div class="pearls"></div>
+        </div>
+        <div class="tier tier-top">
+          <div class="lid" id="topLid"></div>
+          <div class="drip"></div>
+        </div>
+        <div class="candles" id="candles"></div>
+      </div>
+      <div class="stand"></div>
+    </div>
+
+    <button class="blow-btn hidden" id="blowBtn">💨 Thổi nến</button>
+
+    <div class="lighter" id="lighter">
+      <div class="flame" id="lighterFlame"></div>
+      <svg viewBox="0 0 60 100" width="46" height="76">
+        <rect x="14" y="30" width="32" height="60" rx="8" fill="#3b8bd6"/>
+        <rect x="18" y="20" width="24" height="16" rx="4" fill="#2c6cad"/>
+        <rect x="26" y="6" width="8" height="16" rx="2" fill="#c0c0c0"/>
+        <circle cx="30" cy="8" r="5" fill="#e0e0e0"/>
+      </svg>
+    </div>
+
+    <div class="congrats hidden" id="congrats">
+      <h2>🎉 CHÚC MỪNG SINH NHẬT 🎉</h2>
+      <p>Chúc Phương NN tuổi mới thật nhiều niềm vui, sức khoẻ và hạnh phúc! 🥳</p>
+
+      <!-- Thay ảnh: đặt file ảnh (vd photo.jpg) cùng thư mục rồi đổi src của #photoImg.
+           Căn vương miện cho khớp đầu người trong ảnh bằng 4 biến --crown-* bên dưới
+           (xem README.md). -->
+      <div class="photo-frame" id="photoFrame"
+           style="--crown-x: 50%; --crown-y: 26%; --crown-width: 54%; --crown-tilt: 0deg;">
+        <img src="photo-placeholder.svg" alt="Ảnh của bạn" id="photoImg" class="photo-img">
+        <img src="crown.svg" alt="Vương miện" id="crownImg" class="crown-img">
+      </div>
+    </div>
+
+    <div class="confetti-container" id="confetti"></div>
+  </main>
+
+  <audio id="bgm" loop preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
